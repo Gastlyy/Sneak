@@ -1,181 +1,156 @@
-.body {
-    font-family: 'lato', sans-serif;
+body {
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    padding: 29px 0;
+    font-family: 'Lato', cursive;
+}
+
+.container {
+    width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-actions {
 
 }
 
-.Menu {
-    position: absolute;
-    width: 603px;
-    height: 28px;
-    left: 499px;
-    top: 32px;
 
-    
-}
 
-.novidades {
-    position: absolute;
-    width: 99px;
-    height: 28px;
-    left: 251px;
-    top: 0px;
-
+.header-list {
     display: flex;
-    align-items: center;
-
-    text-decoration: none;
-    color: #1F1F1F;
 }
 
-.feminino {
-    position: absolute;
-    width: 83px;
-    height: 28px;
-    left: 126px;
-    top: 0px;
-
+.container-flex {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #1F1F1F;
 }
 
-.masculino {
-    position: absolute;
-    width: 92px;
-    height: 28px;
-    left: 0px;
-    top: 0px;
-    
-    display: flex;
+.container-flex-spaced {
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    color: #1F1F1F;
 }
 
-.ofertas {
-    position: absolute;
-    width: 70px;
-    height: 28px;
-    left: 392px;
-    top: 0px;
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #1F1F1F;
+.header-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
 }
 
-.coleçoes {
-    position: absolute;
-    width: 86px;
-    height: 28px;
-    left: 504px;
-    top: 0px;
-
-    display: flex;
-    align-items: center;
-
+.header-nav {
 }
 
-.search {
-    position: absolute;
-    width: 235px;
-    height: 52px;
-    right: 148px;
-    top: 20px;
-
-    background: #F2F2F2;
+.header-actions-search {
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #f2f2f2;
+    background-image: url('/img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 13px 20px;
+    background-size: 18px;
     border-radius: 50px;
+    border: none;
+    min-width: 232px;
+    padding: 18px 20px 18px 40px;
+    font-family: 'Lato';
+    vertical-align: middle;
 
 }
 
-.bag {
-    position: absolute;
+.header-actions-search::before {
+    content: '';
+}
+
+.header-cart {
+    display: inline-block;
     width: 52px;
     height: 52px;
-    right: 72px;
-    top: 20px;
-
     border-radius: 50px;
-    background: #F2F2F2;
+    background-image: url('/img/carrinho.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 24px;
 }
 
-.image-corra {
-    position: absolute;
-    width: 1600px;
-    height: 720px;
-    left: 0px;
-    top: 4240px;
-
-    background-image: url('../img/image.jpg');
+.header-list-item {
+    list-style: none;
 }
 
-.SNEAK {
 
-    position: absolute;
-    width: 67px;
-    height: 28px;
-    left: 80px;
-    top: 32px;
+.header-list-item a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    padding: 0 12px;
+}
 
+.main-section-1 {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 1350px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 80px;
 }
-.ultra-light {
-    position: absolute;
+
+.main-section-1-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 104px;
+
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill: transparent;
+}
+
+.main-section-1-description {
+    width: 475px;
+    height: 84px;
+    left: 0px;
+    top: 243px;
+}
+
+.main-section-1-button {
+    background-color: #f2f2f2;
+    background-image: url('/img/mais.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 280px 30px;
+    justify-content: space-between;
+    padding: 26px 32px 26px 32px;
+    border-radius: 12px;
+    border: 2px solid #1f1f1f;
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 333px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #1F1F1F;
+}
+
+.main-section-1-button::after {
+    content: none;
+}
+
+
+
+.main-section-1-image-div {
+    margin-right: 141px;
+    background-image: url('./img/tenis.png');
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);opacity: 0.2;
+    border-radius: 50%;
+    background-position: center;
     width: 581px;
-    height: 208px;
-    left: 0px;
-    top: 11px;
-}
-
-.First-screen {
-    position: absolute;
-    width: 1469.16px;
     height: 581px;
-    left: 80px;
-    top: 172px;
 }
-
-.Group-19 {
-    position: absolute;
-    width: 1440px;
-    height: 767px;
-    left: 80px;
-    top: 953px;
-}
-
-.Leveza-e-agilidade {
-    position: absolute;
-    width: 1440px;
-    height: 600px;
-    left: 80px;
-    top: 1920px;
-
-}
-
-.Image-corra {
-    position: absolute;
-    width: 1600px;
-    height: 720px;
-    left: 0px;
-    top: 4160px;
-}
-
-.group-12 {
-    position: absolute;
-    width: 1440px;
-    height: 838px;
-    left: 80px;
-    top: 5160px;
-}
-
-.class-20 {
-    position: absolute;
-    width: 1600px;
-    height: 374px;
-    left: 0px;
-    top: 6158px;
-}
-
