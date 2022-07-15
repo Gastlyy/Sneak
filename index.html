@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+
+    <style>
+
+    </style>
 </head>
 <body>
     <header class="header">
@@ -36,99 +40,141 @@
             <div>
                 <h1 class="main-section-1-title">SNEAK.<br>Ultra Light</h1>
                 <p class="main-section-1-description" >Os tênis SNEAK foram criados especificamente para treinos de circuito, seja para aulas fitness em casa ou para sua própria rotina de treinos.</p>
-                <button class="main-section-1-button">Adicionar ao Carrinho</button>
+                <a href="#"><button class="main-section-1-button" >Adicionar ao Carrinho</button></a>
             </div>
-            <div class="main-section-1-image-div">
-                <img style="width: 1095px; height: 541px;" src="/img/tenis.png">
+            <div>
+                <div class="main-section-1-background">
+                </div>
+                <div class="main-section-1-image">
+                </div>
             </div>
         </section>
-        <aside>
-            <h3>CORRIDA - Masculino</h3>
+        <aside class="first-aside">
+            <div class="first-aside-text">
+                <h3>CORRIDA - Masculino</h3>
+            </div>
+            <div class="first-aside-color-selector">
+                <ul class="first-aside-color-selector-ul">
+                    <li class="first-aside-color-selector-white"> </li>
+                    <li class="first-aside-color-selector-bege"></li>
+                    <li class="first-aside-color-selector-white-black"></li>
+                    <li class="first-aside-color-selector-black"></li>
+
+                </ul>
+            </div>
+            <div class="first-aside-images">
+            </div>
+            <div class="first-aside-color-description">
+                <p>Branco</p>
+            </div>
+            <div class="first-aside-button-div" >
+                <a href="#"><button class="first-aside-button">Adicionar ao Carrinho</button></a>
+            </div>
         </aside>
         <section class="main-section-2" >
-            <div class="main-section-2-first">
+            <div class="main-section-2-f">
                 <div>
                     <h3>Leveza e Agilidade</h3>
                     <p class="main-section-2-description">A construção ligeira de espuma e malha do SNEAK proporcionam conforto e agilidade durante o exercício. Um “burpee break” na parte frontal do pé torna-o extremamente flexível para fazer prancha ou Mountain Climber.</p>
                 </div>
                 <div>
-                    <img src="/img/Leveza e agilidade.png">
+                    <img src="img/Leveza e agilidade.png">
                 </div>
             </div>
-            <div class="main-section-2-second">
-                <div>
+            <div class="main-section-2-s">
+                <div class="ms-2-text">
                     <h3>Amortecimento imediato</h3>
                     <p>A espuma grossa sob o pé absorve o impacto e retorna a energia ao correr com os joelhos altos e ao saltar. O suporte de arco da parte média do pé garante conforto durante todo o treino.</p>
                 </div>
                 <div>
-                    <img src="/img/1.png">
-                    <img src="/img/2.png">
+                    <img class="ms-img-1" src="img/1.png">
+                    <img class="ms-img-2" src="img/2.png">
                 </div>
             </div>
-            <div class="main-section-2-third">
-                <div>
+            <div class="main-section-2-t">
+                <div class="ms-2-t-text">
                     <h3>Sensação de estabilização</h3>
                     <p>O outrigger - a proteção lateral - dá estabilidade ao pé ao fazer movimentos laterais, como por exemplo, o Skater Squat. </p>
                 </div>
                 <div>
-                    <img src="/img/Sensação de estabilização.png">
+                    <img src="img/Sensação de estabilização.png">
                 </div>
             </div>
         </section>
-        <aside>
-            <h3>
-                >CORRA<br>
-                COMO SE O MUNDO<br>
-                DEPENDESSE DE VOCÈ
-            </h3>
-        </aside>
-        <section>
+        <aside class="second-aside">
             <div>
-                <img src="">
+                <h3 class="second-aside-text">
+                    ﾠﾠCORRA<br>
+                     COMO SE O MUNDO<br>
+                     DEPENDESSE DE VOCÈ
+                </h3>
             </div>
-            <form>
-                <h3>Entre em contato</h3>
-                <input type="text" placeholder="Nome"/>
-                <input type="email" placeholder="Email"/>
-                <textarea placeholder="Comentários"></textarea>
-                <label>
-                    <input type="checkbox" />
-                    Concordo com a política de privacidade;
-                </label>
-                <input type="submit"/>
-            </form>
+        </aside>
+        <section class="contact-us">
+            <div class="contact-box">
+                <div class="left">
+                    <img src="">
+                </div>
+                <form class="right">
+                    <h3>Entre em contato</h3>
+                    <input type="text" class="field" placeholder="Nome"/>
+                    <input type="email" class="field" placeholder="Email"/>
+                    <textarea class="field-coments" placeholder="Comentários"></textarea>
+                    <label class="field-cb">
+                        <input type="checkbox" />
+                        Concordo com a política de privacidade;
+                    </label>
+                    <input class="btn" type="submit"/>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer-sneak">
             <h1>SNEAK.</h1>
         </div>
-        <div>
-            <h5>SOBRE SNEAK</h5>
+        <div class="footer-about-sneak">
+            <h5 style="font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;">SOBRE SNEAK</h5>
             <ul>
-                <li><a  href="#" >Novidades</a></li>
-                <li><a  href="#" >Carreira</a></li>
-                <li><a  href="#" >Para investidores</a></li>
-                <li><a  href="#" >Cuidado com o meio ambiente</a></li>
+                <li class="footer-about-sneak-li" ><a  href="#" >Novidades</a></li>
+                <li class="footer-about-sneak-li" ><a  href="#" >Carreira</a></li>
+                <li class="footer-about-sneak-li" ><a  href="#" >Para investidores</a></li>
+                <li class="footer-about-sneak-li" ><a  href="#" >Cuidado com o meio ambiente</a></li>
             </ul>
         </div>
-        <div>
-            <h5>AJUDA</h5>
+        <div class="footer-help">                
+            <h5 style="font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;">AJUDA</h5>
             <ul>
-                <li><a  href="#" >Status do pedido</a></li>
-                <li><a  href="#" >Entregas e frete</a></li>
-                <li><a  href="#" >Trocas e devoluções</a></li>
-                <li><a  href="#" >Opções de pagamento</a></li>
+                <li class="footer-help-li"><a  href="#" >Status do pedido</a></li>
+                <li class="footer-help-li"><a  href="#" >Entregas e frete</a></li>
+                <li class="footer-help-li"><a  href="#" >Trocas e devoluções</a></li>
+                <li class="footer-help-li"><a  href="#" >Opções de pagamento</a></li>
             </ul>
         </div>
-        <div>
+        <div class="footer-social-media">
             <h5>REDES SOCIAIS</h5>
             <ul>
-                <li><a  href="#"><img src="/img/instagram icon.png"/></a></li>
-                <li><a  href="#"><img src="/img/Facebook.png"/></a></li>
-                <li><a  href="#"><img src="/img/Twitter.png"/></a></li>
+                <li class="footer-social-media-li"><a  href="#"><img src="img/Instagram.png"/></a></li>
+                <li class="footer-social-media-li"><a  href="#"><img src="img/Facebook.png"/></a></li>
+                <li class="footer-social-media-li"><a  href="#"><img src="img/Twitter.png"/></a></li>
             </ul>
         </div>
     </footer>
+    <div class="mentorama">
+        <h1>  DESIGNED BY <a style="
+            text-decoration: none ; 
+            color: #1f1f1f; 
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;" 
+            href="https://mentorama.com.br">mentorama</a> </h1>
+    </div>
 </body>
 </html>

@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Lato, sans-serif;
 }
@@ -12,12 +17,6 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
-
-.header-actions {
-
-}
-
-
 
 .header-list {
     display: flex;
@@ -38,15 +37,12 @@ body {
     line-height: 28px;
 }
 
-.header-nav {
-}
-
 .header-actions-search {
     font-size: 16px;
     appearance: none;
     -webkit-appearance: none;
     background-color: #f2f2f2;
-    background-image: url('/img/lupa.png');
+    background-image: url('../img/lupa.png');
     background-repeat: no-repeat;
     background-position: 13px 20px;
     background-size: 18px;
@@ -68,7 +64,8 @@ body {
     width: 52px;
     height: 52px;
     border-radius: 50px;
-    background-image: url('/img/carrinho.png');
+    background: #F2F2F2;
+    background-image: url('../img/carrinho.png');
     background-repeat: no-repeat;
     background-position: center center;
     vertical-align: middle;
@@ -88,21 +85,29 @@ body {
 }
 
 .main-section-1 {
+    position: relative;
     display: flex;
     justify-content: center;
     max-width: 100%;
     width: 1350px;
     margin: 0 auto;
-    justify-content: space-between;
     margin-top: 80px;
+    margin-bottom: 200px;
+    justify-content: space-between;
 }
 
 .main-section-1-title {
+    margin: 0px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 104px;
     line-height: 104px;
+    width: 581px;
+    height: 208px;
+    left: 0px;
+    top: 11px;
+    padding-bottom: 24px;
 
     background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
     -webkit-background-clip: text;
@@ -119,8 +124,7 @@ body {
 }
 
 .main-section-1-button {
-    background-color: #f2f2f2;
-    background-image: url('/img/mais.png');
+    background-image: url('../img/mais.png');
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 280px 30px;
@@ -137,20 +141,504 @@ body {
     line-height: 28px;
     vertical-align: middle;
     color: #1F1F1F;
+    background-color: transparent;
 }
 
 .main-section-1-button::after {
     content: none;
 }
 
-
-
-.main-section-1-image-div {
-    margin-right: 141px;
-    background-image: url('./img/tenis.png');
+.main-section-1-background {
+    position: absolute;
+    margin: 0px 0px 0px 111px;
     background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);opacity: 0.2;
     border-radius: 50%;
     background-position: center;
     width: 581px;
     height: 581px;
 }
+
+.main-section-1-image {
+    background: url(../img/tenis.png);
+    background-position: center;
+    width: 700px;
+    height: 581px;
+    background-repeat: no-repeat;
+}
+
+.first-aside {
+    max-width: 100%;
+    width: 1350px;
+    margin: 0 auto;
+    background: #F3F3F3;
+    border-radius: 8px;
+    margin-bottom: 200px;
+    height: 767px;
+    left: 80px;
+}
+
+.first-aside-text {
+    margin: 64px auto 32px auto;
+    display: flex;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1f1f1f;
+    width: 463px;
+    display: flex;
+}
+
+.first-aside-text h3 {
+
+}
+
+.first-aside-color-selector {
+    width:164px;
+    margin: 32px auto 16px auto;
+
+}
+
+.first-aside-color-selector-ul {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+}
+
+.first-aside-color-selector-white {
+    width: 32px;
+    height: 32px;
+
+    background: linear-gradient(270.06deg, #E4E4E4 20.97%, #FFFFFF 99.92%);
+    border: 2px solid rgba(31, 31, 31, 0.5);
+    border-radius: 50%;
+
+
+}
+
+.first-aside-color-selector-bege {
+    width: 32px;
+    height: 32px;
+
+    background: linear-gradient(277.74deg, #FFE08D 9.16%, #FFB757 91.03%);
+    opacity: 0.5;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.first-aside-color-selector-white-black {
+    width: 32px;
+    height: 32px;
+
+
+    background: linear-gradient(270.06deg, #464646 20.97%, #D3D3D3 99.92%);
+    opacity: 0.5;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.first-aside-color-selector-black {
+    width: 32px;
+    height: 32px;
+
+    background: linear-gradient(270.06deg, #232323 20.97%, #000000 99.92%);
+    opacity: 0.5;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.first-aside-color-description {
+    /* Branco */
+width: 50px;
+
+/* Sneak / Button Text 20 / Medium */
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+display: flex;
+margin: 23px auto 32px auto;
+text-align: center;
+
+/* Sneak / Black */
+
+color: #1F1F1F;
+}
+
+.first-aside-images {
+    margin: 16px auto 23px;
+    display: flex;
+    background: url(../img/tenis-branco.png);
+    width: 464px;
+    height: 241.38px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-aside-button-div {
+    margin: 32px auto auto auto;
+    display: flex;
+    width: 336px;
+    height: 84px;
+}
+
+.first-aside-button {
+    padding: 26px 32px 26px 32px;
+    border-radius: 12px;
+    border: 2px solid #1f1f1f;
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 333px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1F1F1F;
+    background-color: transparent;
+}
+
+.main-section-2 {
+    max-width: 100%;
+    width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    justify-content: space-between;
+
+}
+
+.main-section-2-f {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.main-section-2-f img {
+    width: 500px;
+}
+
+.main-section-2-f h3 {
+    margin: 0px;
+    width: 581px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.main-section-2-f p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 581px;
+    height: 112px;
+    left: 0px;
+    top: 160px;
+    color: #1F1F1F;
+}
+
+.main-section-2-s {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.ms-2-text {
+    margin-top: -183px;
+    width: auto;
+    height: auto;
+}
+
+.main-section-2-s h3 {
+    margin: 0px;
+    width: 581px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.main-section-2-s p {
+    padding-right: 77px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 581px;
+    height: 112px;
+    left: 0px;
+    top: 160px;
+    color: #1F1F1F;
+}
+
+
+
+.ms-img-1 {
+    width: 355px;
+}
+
+.ms-img-2 {
+    width: 202px;
+}
+
+.main-section-2-t {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.ms-2-t-text {
+    margin-top: -260px;
+    width: 581px;
+}
+
+.main-section-2-t h3 {
+    margin: 0px;
+    background: linear-gradient(270.06deg, #DADADA 20.97%, #9F9F9F 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.main-section-2-t p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1F1F1F;
+}
+
+.main-section-2-t img {
+    width: 569px;
+}
+
+.second-aside-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 104px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    background-image: url(../img/seta.png);
+    background-repeat: no-repeat;
+    background-position:  34px 32px;
+    background-size: 44px 45px;
+}
+
+.second-aside-text::before {
+    content: '';
+}
+
+.second-aside {
+    max-width: 100%;
+    width: 1440px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Image.jpg);
+    border-radius: 8px;
+    margin-bottom: 200px;
+    height: 720px;
+    left: 80px;
+}
+
+.contact-us {
+    max-width: 100%;
+    width: 1350px;
+    margin: 0 auto 160px auto;
+    background: #F3F3F3;
+    border-radius: 0px 8px 0px 8px;
+
+}
+
+.contact-box {
+    max-width: 1350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 827px;
+    height: 838px;
+    background: url(/Sneak/img/image\ 1.png);
+    background-size: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.right{
+    width: 517px;
+    padding: 20px 30px;
+}
+
+.right h3{
+    width: 485px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.field{
+    border-radius: 12px;
+    padding: 20px 30px;
+    min-width: 81%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	font-size: 1.1rem;
+	margin-bottom: 24px;
+}
+
+.field-coments {
+    border-radius: 12px;
+    padding: 20px 3px 150px 29px;
+    min-width: 449px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	font-size: 1.1rem;
+	margin-bottom: 24px; 
+}
+
+.field-cb{
+    margin-top: 30px;
+}
+
+.btn{
+    margin-top: 114px;
+    justify-content: space-between;
+    padding: 15px 32px 15px 32px;
+    border-radius: 12px;
+    border: 2px solid #1f1f1f;
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 483px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #1F1F1F;
+    background-color: transparent;
+}
+
+footer {
+    background: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    height: 306px;
+
+}
+
+footer h1 {
+    margin: 56px 80px;
+    width: 67px;
+    color: #1F1F1F;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+footer ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+h5 { 
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    
+}
+
+.footer-about-sneak{
+    margin-top: 57px;
+}
+
+.footer-about-sneak a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.footer-help{
+    margin-top: 57px;
+}
+
+.footer-help a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #1f1f1f;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 6px;
+    margin-top: 6px
+}
+
+.footer-social-media {
+    margin-top: 57px;
+    margin-right: 200px;
+}
+
+.footer-social-media ul {
+    justify-content: space-between;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mentorama {
+    justify-content: center;
+    display: flex;
+    background: #F3F3F3;
+}
+
